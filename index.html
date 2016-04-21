@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple interactive canvas</title>
+  <script src="./fabric.js" type="text/javascript"></script>
+
+  <!--[if lt IE 9]>
+      <script src="https://rawgit.com/kangax/fabric.js/master/lib/excanvas.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <ul id="header">
+    <div id="bd-wrapper">
+      <h2>Simple interactive canvas with Fabric.js</h2>
+      <h3>
+        <div id="status">STATUS</div>
+      </h3>
+  </ul>
+
+  <div id="commands">
+    <button id="select" class="select">
+      <img src="http://ajaxanimator.googlecode.com/svn/trunk/ajaxanimator/img/icon/select.gif"
+        title="Select" /></button>
+    <button id="rect" class="rect">
+      <img src="http://ajaxanimator.googlecode.com/svn/trunk/ajaxanimator/img/icon/rectangle.gif"
+        title="Rectangle" /></button>
+    <button id="circle" class="circle">
+      <img src="http://ajaxanimator.googlecode.com/svn/trunk/ajaxanimator/img/icon/circle.gif"
+        title="circle" /></button>
+    <button id="drawing-mode">
+      <img src="http://ajaxanimator.googlecode.com/svn/trunk/ajaxanimator/img/icon/path.gif"
+        title="Path/Freeform" /></button>
+    <button id="text" class="text">
+      <img src="http://ajaxanimator.googlecode.com/svn/trunk/ajaxanimator/img/icon/text.gif"
+        title="Text" /></button>
+    <button id="remove-selected">
+      <img src="http://ajaxanimator.googlecode.com/svn/trunk/ajaxanimator/img/icon/delete.gif"
+        title="Remove selected object/group" /></button>
+    <button id="clear" class="clear">
+      <img src="http://ajaxanimator.googlecode.com/svn/trunk/ajaxanimator/img/silk/arrow_rotate_clockwise.png"
+        title="Clear" /></button>
+    <input id="drawing-color" class="color {hash:true}" value="#000000" size="15" type="color"></input>
+    <input id="drawing-line-width" value="10" size="2" style="width: 36px" />
+  </div>
+  <canvas id="canvas" height="700" width="800" style="border:1px solid #ccc"></canvas>
+
+  </div>
+
+  <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
